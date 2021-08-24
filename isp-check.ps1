@@ -10,7 +10,7 @@
 ##
 ## Goal: Deal with ISP drop-outs by switching to cell hotspot over WiFi
 
-## Before running, on PC set the following: route add 8.8.8.8 mask 255.255.255.255 192.168.88.1
+## Before running, on PC set the following: route add 8.8.8.8 mask 255.255.255.255 192.168.88.1 (or substitute 192.168.88.1 with your gateway address)
 
 $ethernetAdapter = get-netadapter -Name Ethernet | select -exp ifIndex
 
